@@ -1,0 +1,11 @@
+diff -dur rtmidi-3.0.0.orig/configure.ac rtmidi-3.0.0/configure.ac
+--- rtmidi-3.0.0.orig/configure.ac	2017-09-01 02:10:07.000000000 +0200
++++ rtmidi-3.0.0/configure.ac	2017-11-22 15:33:53.000000000 +0100
+@@ -76,7 +76,6 @@
+ 
+ # Set paths if prefix is defined
+ if test "x$prefix" != "x" && test "x$prefix" != "xNONE"; then
+-  LIBS="$LIBS -L$prefix/lib"
+   CPPFLAGS="$CPPFLAGS -I$prefix/include/rtmidi"
+ fi
+ 

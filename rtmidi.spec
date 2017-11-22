@@ -11,6 +11,7 @@ License:	MIT
 Group:		Applications
 Source0:	http://www.music.mcgill.ca/~gary/rtmidi/release/%{name}-%{version}.tar.gz
 # Source0-md5:	d22e3a5dee972fa0725c420923f1ce65
+Patch0:		linking.patch
 URL:		http://music.mcgill.ca/%7Egary/rtmidi/
 %{?with_alsa:BuildRequires:	alsa-lib-devel}
 BuildRequires:	autoconf
@@ -60,6 +61,8 @@ Statyczna biblioteka %{name}.
 
 %prep
 %setup -q
+
+%patch0 -p1
 
 %build
 #%%{__gettextize}
