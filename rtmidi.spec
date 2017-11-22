@@ -72,7 +72,7 @@ Statyczna biblioteka %{name}.
 	%{__with jack} \
 	%{__with alsa}
 
-%{__make}
+%{__make} V=1
 
 %install
 rm -rf $RPM_BUILD_ROOT
